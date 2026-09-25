@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: parking
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/parking}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:admin}
+  jpa:
+    hibernate:
+      ddl-auto: validate
